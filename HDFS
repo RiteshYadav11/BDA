@@ -1,0 +1,26 @@
+B. Installing Hadoop
+For installing Hadoop, make sure your system has at least 8GB RAM.
+Step 1:
+Open VirtualBox.
+Step 2:
+Click New in the top left corner.
+Step 3:
+Give a name for your Cloudera virtual machine and select the type as Linux and version as Other Linux (64-bit), then click Next.
+Step 4:
+Allocate 8192 MB of memory and increase the CPU to 4, then click Next.
+Step 5:
+Select the option Use an existing virtual hard disk file and click the Browse link. Then, browse and select the downloaded VMDK file, click Open, and then click on Create.
+Step 6:
+Select the virtual machine and click Start. Wait for all configurations to set up.
+
+HDFS Commands
+Sr No.	Description	Commands
+1	Help for listing files	                              hdfs dfs -help
+2	For making/creating a new directory	                  hdfs dfs -mkdir myfile
+3	For listing directories in the root directory	        hdfs dfs -ls /
+4	For listing files and directories recursively	        hdfs dfs -ls -R /
+5	Copying files from the local system into HDFS	        hdfs dfs -put /home/cloudera/Desktop/newfile.txt /myfile/newfile.txt
+6	Retrieving files from HDFS to the local system	      hdfs dfs -get /myfile/newfile.txt /home/cloudera/Desktop/newfile.txt
+7	Displaying contents of a file in HDFS	                hdfs dfs -cat /myfile/newfile.txt
+8	Viewing the end of a file in HDFS	                    hdfs dfs -tail /myfile/newfile.txt
+9	Deleting files from HDFS	                            hdfs dfs -rm /myfile/newfile.txt
